@@ -5,8 +5,7 @@
             {{ __('Home') }}
         </h2>
     </x-slot>
-    @include('components.hero')
-    @include('components.section')
+    @include('components.pricing')
     @include('components.footer')
 </x-app-layout>
 

@@ -6,6 +6,7 @@ use \App\Http\Controllers\HomeController;
 use \App\Http\Controllers\DashboardController;
 
 Route::get('/', [HomeController::class, 'home'])->name('home');
+Route::get('pricing', [\App\Http\Controllers\PricingController::class,'pricing'])->name('pricing');
 
 Route::get('/dashboard',[DashboardController::class, '__invoke'])->middleware(['auth', 'verified'])->name('dashboard');
 
