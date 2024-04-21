@@ -4,7 +4,19 @@
             {{ __('Profile') }}
         </h2>
     </x-slot>
-
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
+            <div class="text-black sm:p-9 bg-white dark:bg-gray-800 shadow sm:rounded-lg text-black">
+                <p class="text-xl"> User Information</p>
+                <div class="text-sm font-medium">Nama:</div>
+                <div class="text-lg">{{ $user->name }}</div>
+                <div class="text-sm mt-2 font-medium">Email:</div>
+                <div class="text-lg">{{ $user->email }}</div>
+                <div class="text-sm mt-2 font-medium">Account Created at:</div>
+                <div class="text-lg">{{ $user->created_at->format('d F Y') }}</div>
+            </div>
+        </div>
+    </div>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 space-y-6">
             <div class="text-black sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
