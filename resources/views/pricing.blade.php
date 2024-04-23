@@ -6,7 +6,6 @@
         </h2>
     </x-slot>
     @include('components.pricing')
-    @include('components.footer')
 </x-app-layout>
 
 

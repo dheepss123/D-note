@@ -13,10 +13,19 @@
                     <x-nav-link :href="route('home')">
                         {{ __('Home Page') }}
                     </x-nav-link>
-                    @if (!request()->routeIs('dashboard'))
+                    @if (!request()->routeIs('dashboard','note'))
                     <x-nav-link :href="route('pricing')">
                         {{ __('Pricing') }}
                     </x-nav-link>
+                    @endif
+                    @if (!request()->routeIs('home'))
+                    <x-nav-link :href="route('note')">
+                        {{ __('Create a new note') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('mynotes')">
+                        {{ __('My Notes') }}
+                    </x-nav-link>
+
                     @endif
                 </div>
             </div>
